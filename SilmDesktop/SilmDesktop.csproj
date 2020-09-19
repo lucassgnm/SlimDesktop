@@ -87,28 +87,28 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="View\FormPrincipal.cs">
+    <Compile Include="View\Produto\FormPrincipal.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="View\FormPrincipal.Designer.cs">
+    <Compile Include="View\Produto\FormPrincipal.Designer.cs">
       <DependentUpon>FormPrincipal.cs</DependentUpon>
     </Compile>
-    <Compile Include="View\FormProduto.cs">
+    <Compile Include="View\Produto\FormProduto.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="View\FormProduto.Designer.cs">
+    <Compile Include="View\Produto\FormProduto.Designer.cs">
       <DependentUpon>FormProduto.cs</DependentUpon>
     </Compile>
-    <Compile Include="View\FormProdutoAdd.cs">
+    <Compile Include="View\Produto\FormProdutoAdd.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="View\FormProdutoAdd.Designer.cs">
+    <Compile Include="View\Produto\FormProdutoAdd.Designer.cs">
       <DependentUpon>FormProdutoAdd.cs</DependentUpon>
     </Compile>
-    <Compile Include="View\FormProdutoEdit.cs">
+    <Compile Include="View\Produto\FormProdutoEdit.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="View\FormProdutoEdit.Designer.cs">
+    <Compile Include="View\Produto\FormProdutoEdit.Designer.cs">
       <DependentUpon>FormProdutoEdit.cs</DependentUpon>
     </Compile>
     <Compile Include="WaitFormExample\Properties.cs" />
@@ -125,16 +125,16 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
-    <EmbeddedResource Include="View\FormPrincipal.resx">
+    <EmbeddedResource Include="View\Produto\FormPrincipal.resx">
       <DependentUpon>FormPrincipal.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="View\FormProduto.resx">
+    <EmbeddedResource Include="View\Produto\FormProduto.resx">
       <DependentUpon>FormProduto.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="View\FormProdutoAdd.resx">
+    <EmbeddedResource Include="View\Produto\FormProdutoAdd.resx">
       <DependentUpon>FormProdutoAdd.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="View\FormProdutoEdit.resx">
+    <EmbeddedResource Include="View\Produto\FormProdutoEdit.resx">
       <DependentUpon>FormProdutoEdit.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
