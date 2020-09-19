@@ -1,0 +1,39 @@
+﻿using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows.Forms;
+
+namespace SilmDesktop.View
+{
+    public partial class FormPrincipal : MetroFramework.Forms.MetroForm
+    {
+        public FormPrincipal()
+        {
+            InitializeComponent();
+        }
+
+        private void FormPrincipal_Load(object sender, EventArgs e)
+        {
+            Timer timer = new Timer();
+            timer.Interval = (1000); // 1 sec
+            timer.Tick += new EventHandler(timer_Tick);
+            timer.Start();
+        }
+
+        private void timer_Tick(object sender, EventArgs e)
+        {
+            lblDataHora.Text = DateTime.Now.ToString();
+        }
+
+        private void btnProdutos_Click(object sender, EventArgs e)
+        {
+            FormProduto f = new FormProduto();
+            f.ShowDialog();
+        }
+    }
+}
