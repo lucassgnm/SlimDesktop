@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using SilmDesktop.View.Cliente;
 
 namespace SilmDesktop.View
 {
@@ -33,6 +34,12 @@ namespace SilmDesktop.View
         private void btnProdutos_Click(object sender, EventArgs e)
         {
             FormProduto f = new FormProduto();
+            f.ShowDialog();
+        }
+
+        private void btnClientes_Click(object sender, EventArgs e)
+        {
+            FormCliente f = new FormCliente();
             f.ShowDialog();
         }
     }

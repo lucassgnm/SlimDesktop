@@ -28,7 +28,7 @@ namespace SilmDesktop.View
 
         private void ltvProdutos_DoubleClick(object sender, EventArgs e)
         {
-            MessageBox.Show(ltvProdutos.SelectedItems[0].SubItems[0].Text);
+            //MessageBox.Show(ltvProdutos.SelectedItems[0].SubItems[0].Text);
         }
 
         private void btnbuscaProduto_Click(object sender, EventArgs e)

@@ -13,6 +13,7 @@ C:\Users\lucas\source\repos\SilmDesktop\SilmDesktop\obj\Debug\SilmDesktop.exe
 C:\Users\lucas\source\repos\SilmDesktop\SilmDesktop\obj\Debug\SilmDesktop.pdb
 C:\Users\lucas\source\repos\SilmDesktop\SilmDesktop\obj\Debug\SilmDesktop.FormLogin.resources
 C:\Users\lucas\source\repos\SilmDesktop\SilmDesktop\obj\Debug\SilmDesktop.View.FormPrincipal.resources
-C:\Users\lucas\source\repos\SilmDesktop\SilmDesktop\obj\Debug\SilmDesktop.View.FormProduto.resources
 C:\Users\lucas\source\repos\SilmDesktop\SilmDesktop\obj\Debug\SilmDesktop.View.FormProdutoAdd.resources
 C:\Users\lucas\source\repos\SilmDesktop\SilmDesktop\obj\Debug\SilmDesktop.View.FormProdutoEdit.resources
+C:\Users\lucas\source\repos\SilmDesktop\SilmDesktop\obj\Debug\SilmDesktop.View.Cliente.FormCliente.resources
+C:\Users\lucas\source\repos\SilmDesktop\SilmDesktop\obj\Debug\SilmDesktop.View.FormProduto.resources

@@ -73,12 +73,30 @@
   <ItemGroup>
     <Compile Include="ApiService.cs" />
     <Compile Include="Controller\Administrador.cs" />
-    <Compile Include="Controller\Cliente.cs" />
+    <Compile Include="Controller\Clientes.cs" />
     <Compile Include="Controller\ItemVenda.cs" />
     <Compile Include="Controller\Mensagem.cs" />
     <Compile Include="Controller\Produto.cs" />
     <Compile Include="Controller\Venda.cs" />
     <Compile Include="Util\PublicMethods.cs" />
+    <Compile Include="View\Cliente\FormCliente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\Cliente\FormCliente.Designer.cs">
+      <DependentUpon>FormCliente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Cliente\FormClienteAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\Cliente\FormClienteAdd.Designer.cs">
+      <DependentUpon>FormClienteAdd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Cliente\FormClienteEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\Cliente\FormClienteEdit.Designer.cs">
+      <DependentUpon>FormClienteEdit.cs</DependentUpon>
+    </Compile>
     <Compile Include="View\FormLogin.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -112,6 +130,9 @@
       <DependentUpon>FormProdutoEdit.cs</DependentUpon>
     </Compile>
     <Compile Include="WaitFormExample\Properties.cs" />
+    <EmbeddedResource Include="View\Cliente\FormCliente.resx">
+      <DependentUpon>FormCliente.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="View\FormLogin.resx">
       <DependentUpon>FormLogin.cs</DependentUpon>
     </EmbeddedResource>
@@ -181,8 +202,6 @@
   <ItemGroup>
     <None Include="Resources\Eclipse-1s-200px.gif" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="View\Cliente\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
