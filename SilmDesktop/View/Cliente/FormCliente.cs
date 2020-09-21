@@ -37,8 +37,8 @@ namespace SilmDesktop.View.Cliente
                         clientes[i].id.ToString(),
                         clientes[i].nome,
                         clientes[i].email,
-                        clientes[i].cpf,
-                        clientes[i].telefone
+                        FormatCnpjCpf.FormatCPF(clientes[i].cpf),
+                       FormatCnpjCpf.formatTelefone(clientes[i].telefone)
                     };
                     ListViewItem item = new ListViewItem(subitems);
                     ltvClientes.Items.Add(item);
@@ -66,8 +66,8 @@ namespace SilmDesktop.View.Cliente
                         clientes[i].id.ToString(),
                         clientes[i].nome,
                         clientes[i].email,
-                        clientes[i].cpf,
-                        clientes[i].telefone
+                        FormatCnpjCpf.FormatCPF(clientes[i].cpf),
+                        FormatCnpjCpf.formatTelefone(clientes[i].telefone)
                     };
                     ListViewItem item = new ListViewItem(subitems);
                     ltvClientes.Items.Add(item);
@@ -96,6 +96,38 @@ namespace SilmDesktop.View.Cliente
                 {
                     carregarClientes();
                 }
+            }
+        }
+
+        private void ltvClientes_MouseClick(object sender, MouseEventArgs e)
+        {
+            if (e.Button == MouseButtons.Right)
+            {
+                if (ltvClientes.FocusedItem.Bounds.Contains(e.Location))
+                {
+                    metroContextMenu1.Show(Cursor.Position);
+                }
+            }
+        }
+
+        private void editarToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FormClienteEdit f = new FormClienteEdit(this, ltvClientes.SelectedItems[0].SubItems[0].Text);
+            f.ShowDialog();
+        }
+
+        private void excluirToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            DialogResult result = MessageBox.Show("Tem certeza que deseja excluir o cliente: " + ltvClientes.SelectedItems[0].SubItems[1].Text + "?", "Aviso",
+            MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
+            if (result == DialogResult.Yes)
+            {
+                ApiService apiserv = new ApiService();
+                var json = apiserv.fazRequisicaoPOST("https://slimws.tk/desktop/excluirCliente", "id=" + ltvClientes.SelectedItems[0].SubItems[0].Text);
+                JavaScriptSerializer js = new JavaScriptSerializer();
+                Mensagem mensagem = js.Deserialize<Mensagem>(json);
+                carregarClientes();
+                MessageBox.Show(mensagem.msg);
             }
         }
     }

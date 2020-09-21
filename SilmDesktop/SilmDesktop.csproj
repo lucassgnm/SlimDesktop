@@ -77,19 +77,14 @@
     <Compile Include="Controller\ItemVenda.cs" />
     <Compile Include="Controller\Mensagem.cs" />
     <Compile Include="Controller\Produto.cs" />
-    <Compile Include="Controller\Venda.cs" />
+    <Compile Include="Controller\Vendas.cs" />
+    <Compile Include="Util\FormatCnpjCpfTelefone.cs" />
     <Compile Include="Util\PublicMethods.cs" />
     <Compile Include="View\Cliente\FormCliente.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="View\Cliente\FormCliente.Designer.cs">
       <DependentUpon>FormCliente.cs</DependentUpon>
-    </Compile>
-    <Compile Include="View\Cliente\FormClienteAdd.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="View\Cliente\FormClienteAdd.Designer.cs">
-      <DependentUpon>FormClienteAdd.cs</DependentUpon>
     </Compile>
     <Compile Include="View\Cliente\FormClienteEdit.cs">
       <SubType>Form</SubType>
@@ -129,9 +124,18 @@
     <Compile Include="View\Produto\FormProdutoEdit.Designer.cs">
       <DependentUpon>FormProdutoEdit.cs</DependentUpon>
     </Compile>
+    <Compile Include="View\Venda\FormVenda.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\Venda\FormVenda.Designer.cs">
+      <DependentUpon>FormVenda.cs</DependentUpon>
+    </Compile>
     <Compile Include="WaitFormExample\Properties.cs" />
     <EmbeddedResource Include="View\Cliente\FormCliente.resx">
       <DependentUpon>FormCliente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Cliente\FormClienteEdit.resx">
+      <DependentUpon>FormClienteEdit.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="View\FormLogin.resx">
       <DependentUpon>FormLogin.cs</DependentUpon>
@@ -157,6 +161,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="View\Produto\FormProdutoEdit.resx">
       <DependentUpon>FormProdutoEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Venda\FormVenda.resx">
+      <DependentUpon>FormVenda.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">

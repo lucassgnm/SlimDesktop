@@ -8,14 +8,16 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using SilmDesktop.View.Cliente;
+using SilmDesktop.View.Venda;
 
 namespace SilmDesktop.View
 {
     public partial class FormPrincipal : MetroFramework.Forms.MetroForm
     {
-        public FormPrincipal()
+        public FormPrincipal(string nomeadm)
         {
             InitializeComponent();
+            lblNomeAdm.Text = nomeadm;
         }
 
         private void FormPrincipal_Load(object sender, EventArgs e)
@@ -40,6 +42,12 @@ namespace SilmDesktop.View
         private void btnClientes_Click(object sender, EventArgs e)
         {
             FormCliente f = new FormCliente();
+            f.ShowDialog();
+        }
+
+        private void btnVendas_Click(object sender, EventArgs e)
+        {
+            FormVenda f = new FormVenda();
             f.ShowDialog();
         }
     }

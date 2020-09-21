@@ -6,11 +6,13 @@ using System.Threading.Tasks;
 
 namespace SlimDesktop.Controllers
 {
-    class Venda
+    class Vendas
     {
 		public int id { get; set; }
-		public int idcliente { get; set; }
-		public DateTime datavenda { get; set; }
+		public string nomecliente { get; set; }
 		public double total { get; set; }
+		public DateTime datavenda { get; set; }
+		public int status { get; set; }
+		
 	}
 }

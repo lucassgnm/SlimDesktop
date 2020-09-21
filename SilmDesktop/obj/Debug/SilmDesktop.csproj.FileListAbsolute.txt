@@ -17,3 +17,5 @@ C:\Users\lucas\source\repos\SilmDesktop\SilmDesktop\obj\Debug\SilmDesktop.View.F
 C:\Users\lucas\source\repos\SilmDesktop\SilmDesktop\obj\Debug\SilmDesktop.View.FormProdutoEdit.resources
 C:\Users\lucas\source\repos\SilmDesktop\SilmDesktop\obj\Debug\SilmDesktop.View.Cliente.FormCliente.resources
 C:\Users\lucas\source\repos\SilmDesktop\SilmDesktop\obj\Debug\SilmDesktop.View.FormProduto.resources
+C:\Users\lucas\source\repos\SilmDesktop\SilmDesktop\obj\Debug\SilmDesktop.View.Cliente.FormClienteEdit.resources
+C:\Users\lucas\source\repos\SilmDesktop\SilmDesktop\obj\Debug\SilmDesktop.View.Venda.FormVenda.resources

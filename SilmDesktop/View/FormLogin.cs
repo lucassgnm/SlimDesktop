@@ -52,7 +52,7 @@ namespace SilmDesktop
                 if (mensagem.code == 1)
                 {
                     this.Hide();
-                    FormPrincipal f = new FormPrincipal();
+                    FormPrincipal f = new FormPrincipal(mensagem.msg);
                     f.Closed += (s, args) => this.Close();
                     f.Show();
                 }
