@@ -43,10 +43,10 @@
             // btnTodosProdutos
             // 
             this.btnTodosProdutos.FontSize = MetroFramework.MetroButtonSize.Medium;
-            this.btnTodosProdutos.Location = new System.Drawing.Point(705, 583);
-            this.btnTodosProdutos.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnTodosProdutos.Location = new System.Drawing.Point(529, 474);
+            this.btnTodosProdutos.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnTodosProdutos.Name = "btnTodosProdutos";
-            this.btnTodosProdutos.Size = new System.Drawing.Size(229, 42);
+            this.btnTodosProdutos.Size = new System.Drawing.Size(172, 34);
             this.btnTodosProdutos.TabIndex = 11;
             this.btnTodosProdutos.Text = "Limpar pesquisa";
             this.btnTodosProdutos.UseSelectable = true;
@@ -56,19 +56,20 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 6.5F);
-            this.label1.Location = new System.Drawing.Point(13, 612);
+            this.label1.Location = new System.Drawing.Point(10, 497);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(461, 13);
+            this.label1.Size = new System.Drawing.Size(394, 12);
             this.label1.TabIndex = 9;
             this.label1.Text = "O carregamento das vendas pode variar de acordo com a quantidade de itens a serem" +
     " exibidos*";
             // 
             // btnbuscaProduto
             // 
-            this.btnbuscaProduto.Location = new System.Drawing.Point(380, 583);
-            this.btnbuscaProduto.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnbuscaProduto.Location = new System.Drawing.Point(285, 474);
+            this.btnbuscaProduto.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnbuscaProduto.Name = "btnbuscaProduto";
-            this.btnbuscaProduto.Size = new System.Drawing.Size(165, 26);
+            this.btnbuscaProduto.Size = new System.Drawing.Size(124, 21);
             this.btnbuscaProduto.TabIndex = 8;
             this.btnbuscaProduto.Text = "Pesquisar venda (id)";
             this.btnbuscaProduto.UseSelectable = true;
@@ -77,10 +78,10 @@
             // txtIdVenda
             // 
             this.txtIdVenda.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtIdVenda.Location = new System.Drawing.Point(12, 583);
-            this.txtIdVenda.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txtIdVenda.Location = new System.Drawing.Point(9, 474);
+            this.txtIdVenda.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtIdVenda.Name = "txtIdVenda";
-            this.txtIdVenda.Size = new System.Drawing.Size(361, 26);
+            this.txtIdVenda.Size = new System.Drawing.Size(272, 23);
             this.txtIdVenda.TabIndex = 6;
             // 
             // ltvVenda
@@ -94,10 +95,10 @@
             this.ltvVenda.FullRowSelect = true;
             this.ltvVenda.GridLines = true;
             this.ltvVenda.HideSelection = false;
-            this.ltvVenda.Location = new System.Drawing.Point(-3, 0);
-            this.ltvVenda.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.ltvVenda.Location = new System.Drawing.Point(-2, 0);
+            this.ltvVenda.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.ltvVenda.Name = "ltvVenda";
-            this.ltvVenda.Size = new System.Drawing.Size(1057, 578);
+            this.ltvVenda.Size = new System.Drawing.Size(794, 470);
             this.ltvVenda.TabIndex = 7;
             this.ltvVenda.UseCompatibleStateImageBehavior = false;
             this.ltvVenda.View = System.Windows.Forms.View.Details;
@@ -129,18 +130,20 @@
             // 
             // FormVenda
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1052, 633);
+            this.ClientSize = new System.Drawing.Size(789, 514);
             this.Controls.Add(this.btnTodosProdutos);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.btnbuscaProduto);
             this.Controls.Add(this.txtIdVenda);
             this.Controls.Add(this.ltvVenda);
             this.KeyPreview = true;
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "FormVenda";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Manutenção de Vendas";
+            this.Load += new System.EventHandler(this.FormVenda_Load);
             this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.FormVenda_KeyDown);
             this.ResumeLayout(false);
             this.PerformLayout();

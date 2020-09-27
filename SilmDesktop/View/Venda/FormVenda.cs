@@ -113,5 +113,10 @@ namespace SilmDesktop.View.Venda
                 }
             }
         }
+
+        private void FormVenda_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
