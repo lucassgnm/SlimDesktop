@@ -51,7 +51,7 @@ namespace SilmDesktop.View.Venda
             }
             catch (Exception err)
             {
-                MessageBox.Show("Houve um erro ao tentar se conectar com o servidor. " + err);
+                MessageBox.Show("Houve um erro ao tentar se conectar com o servidor " + err);
             }
         }
         public void carregaVendasPorId()
