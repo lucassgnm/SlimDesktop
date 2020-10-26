@@ -50,5 +50,15 @@ namespace SilmDesktop.View
             FormVenda f = new FormVenda();
             f.ShowDialog();
         }
+
+        private void groupBox1_Enter(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lblNomeAdm_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

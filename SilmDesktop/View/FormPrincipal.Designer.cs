@@ -33,28 +33,34 @@
             this.btnVendas = new MetroFramework.Controls.MetroTile();
             this.btnProdutos = new MetroFramework.Controls.MetroTile();
             this.btnClientes = new MetroFramework.Controls.MetroTile();
-            this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.lblNomeAdm = new MetroFramework.Controls.MetroLabel();
+            this.metroLabel1 = new MetroFramework.Controls.MetroLabel();
+            this.metroLabel2 = new MetroFramework.Controls.MetroLabel();
             this.groupBox1.SuspendLayout();
-            this.groupBox2.SuspendLayout();
             this.SuspendLayout();
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.metroLabel2);
+            this.groupBox1.Controls.Add(this.metroLabel1);
+            this.groupBox1.Controls.Add(this.lblNomeAdm);
             this.groupBox1.Controls.Add(this.lblDataHora);
-            this.groupBox1.Location = new System.Drawing.Point(629, 516);
+            this.groupBox1.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.groupBox1.Location = new System.Drawing.Point(20, 799);
             this.groupBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.groupBox1.Size = new System.Drawing.Size(165, 50);
+            this.groupBox1.Size = new System.Drawing.Size(1079, 50);
             this.groupBox1.TabIndex = 3;
             this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Data / Hora";
+            this.groupBox1.Text = "Informações";
+            this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter);
             // 
             // lblDataHora
             // 
             this.lblDataHora.AutoSize = true;
-            this.lblDataHora.Location = new System.Drawing.Point(7, 21);
+            this.lblDataHora.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblDataHora.Location = new System.Drawing.Point(49, 22);
             this.lblDataHora.Name = "lblDataHora";
             this.lblDataHora.Size = new System.Drawing.Size(0, 17);
             this.lblDataHora.TabIndex = 0;
@@ -66,7 +72,7 @@
             this.btnVendas.Location = new System.Drawing.Point(39, 292);
             this.btnVendas.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnVendas.Name = "btnVendas";
-            this.btnVendas.Size = new System.Drawing.Size(757, 218);
+            this.btnVendas.Size = new System.Drawing.Size(353, 218);
             this.btnVendas.TabIndex = 2;
             this.btnVendas.Text = "Vendas";
             this.btnVendas.TileImage = global::SilmDesktop.Properties.Resources.vendas;
@@ -103,7 +109,7 @@
             // 
             this.btnClientes.ActiveControl = null;
             this.btnClientes.BackColor = System.Drawing.Color.DeepSkyBlue;
-            this.btnClientes.Location = new System.Drawing.Point(443, 43);
+            this.btnClientes.Location = new System.Drawing.Point(39, 537);
             this.btnClientes.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnClientes.Name = "btnClientes";
             this.btnClientes.Size = new System.Drawing.Size(353, 222);
@@ -118,31 +124,39 @@
             this.btnClientes.UseTileImage = true;
             this.btnClientes.Click += new System.EventHandler(this.btnClientes_Click);
             // 
-            // groupBox2
-            // 
-            this.groupBox2.Controls.Add(this.lblNomeAdm);
-            this.groupBox2.Location = new System.Drawing.Point(39, 516);
-            this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(584, 50);
-            this.groupBox2.TabIndex = 4;
-            this.groupBox2.TabStop = false;
-            this.groupBox2.Text = "Usuário conectado";
-            // 
             // lblNomeAdm
             // 
             this.lblNomeAdm.AutoSize = true;
-            this.lblNomeAdm.Location = new System.Drawing.Point(6, 21);
+            this.lblNomeAdm.Location = new System.Drawing.Point(341, 17);
             this.lblNomeAdm.Name = "lblNomeAdm";
             this.lblNomeAdm.Size = new System.Drawing.Size(211, 20);
             this.lblNomeAdm.TabIndex = 0;
             this.lblNomeAdm.Text = "Nome de usuário não informado";
+            this.lblNomeAdm.Click += new System.EventHandler(this.lblNomeAdm_Click);
+            // 
+            // metroLabel1
+            // 
+            this.metroLabel1.AutoSize = true;
+            this.metroLabel1.Location = new System.Drawing.Point(3, 17);
+            this.metroLabel1.Name = "metroLabel1";
+            this.metroLabel1.Size = new System.Drawing.Size(40, 20);
+            this.metroLabel1.TabIndex = 1;
+            this.metroLabel1.Text = "Data:";
+            // 
+            // metroLabel2
+            // 
+            this.metroLabel2.AutoSize = true;
+            this.metroLabel2.Location = new System.Drawing.Point(258, 17);
+            this.metroLabel2.Name = "metroLabel2";
+            this.metroLabel2.Size = new System.Drawing.Size(59, 20);
+            this.metroLabel2.TabIndex = 2;
+            this.metroLabel2.Text = "Usuário:";
             // 
             // FormPrincipal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(840, 584);
-            this.Controls.Add(this.groupBox2);
+            this.ClientSize = new System.Drawing.Size(1119, 869);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.btnVendas);
             this.Controls.Add(this.btnProdutos);
@@ -152,11 +166,10 @@
             this.Name = "FormPrincipal";
             this.Padding = new System.Windows.Forms.Padding(20, 74, 20, 20);
             this.Resizable = false;
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.FormPrincipal_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
-            this.groupBox2.ResumeLayout(false);
-            this.groupBox2.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -168,7 +181,8 @@
         private MetroFramework.Controls.MetroTile btnVendas;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.Label lblDataHora;
-        private System.Windows.Forms.GroupBox groupBox2;
         private MetroFramework.Controls.MetroLabel lblNomeAdm;
+        private MetroFramework.Controls.MetroLabel metroLabel2;
+        private MetroFramework.Controls.MetroLabel metroLabel1;
     }
 }
