@@ -29,13 +29,20 @@
         private void InitializeComponent()
         {
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.metroLabel2 = new MetroFramework.Controls.MetroLabel();
+            this.metroLabel1 = new MetroFramework.Controls.MetroLabel();
+            this.lblNomeAdm = new MetroFramework.Controls.MetroLabel();
             this.lblDataHora = new System.Windows.Forms.Label();
             this.btnVendas = new MetroFramework.Controls.MetroTile();
             this.btnProdutos = new MetroFramework.Controls.MetroTile();
             this.btnClientes = new MetroFramework.Controls.MetroTile();
-            this.lblNomeAdm = new MetroFramework.Controls.MetroLabel();
-            this.metroLabel1 = new MetroFramework.Controls.MetroLabel();
-            this.metroLabel2 = new MetroFramework.Controls.MetroLabel();
+            this.metroListView1 = new MetroFramework.Controls.MetroListView();
+            this.id = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.nomecliente = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.total = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.datavenda = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.bandeira = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.metroLabel3 = new MetroFramework.Controls.MetroLabel();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -46,33 +53,68 @@
             this.groupBox1.Controls.Add(this.lblNomeAdm);
             this.groupBox1.Controls.Add(this.lblDataHora);
             this.groupBox1.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.groupBox1.Location = new System.Drawing.Point(20, 799);
-            this.groupBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.groupBox1.Location = new System.Drawing.Point(15, 832);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.groupBox1.Size = new System.Drawing.Size(1079, 50);
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox1.Size = new System.Drawing.Size(1188, 42);
             this.groupBox1.TabIndex = 3;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Informações";
             this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter);
             // 
+            // metroLabel2
+            // 
+            this.metroLabel2.AutoSize = true;
+            this.metroLabel2.FontWeight = MetroFramework.MetroLabelWeight.Regular;
+            this.metroLabel2.Location = new System.Drawing.Point(194, 15);
+            this.metroLabel2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.metroLabel2.Name = "metroLabel2";
+            this.metroLabel2.Size = new System.Drawing.Size(59, 19);
+            this.metroLabel2.TabIndex = 2;
+            this.metroLabel2.Text = "Usuário:";
+            // 
+            // metroLabel1
+            // 
+            this.metroLabel1.AutoSize = true;
+            this.metroLabel1.FontWeight = MetroFramework.MetroLabelWeight.Regular;
+            this.metroLabel1.Location = new System.Drawing.Point(4, 15);
+            this.metroLabel1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.metroLabel1.Name = "metroLabel1";
+            this.metroLabel1.Size = new System.Drawing.Size(41, 19);
+            this.metroLabel1.TabIndex = 1;
+            this.metroLabel1.Text = "Data:";
+            // 
+            // lblNomeAdm
+            // 
+            this.lblNomeAdm.AutoSize = true;
+            this.lblNomeAdm.FontWeight = MetroFramework.MetroLabelWeight.Regular;
+            this.lblNomeAdm.Location = new System.Drawing.Point(257, 15);
+            this.lblNomeAdm.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblNomeAdm.Name = "lblNomeAdm";
+            this.lblNomeAdm.Size = new System.Drawing.Size(208, 19);
+            this.lblNomeAdm.TabIndex = 0;
+            this.lblNomeAdm.Text = "Nome de usuário não informado";
+            this.lblNomeAdm.Click += new System.EventHandler(this.lblNomeAdm_Click);
+            // 
             // lblDataHora
             // 
             this.lblDataHora.AutoSize = true;
-            this.lblDataHora.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblDataHora.Location = new System.Drawing.Point(49, 22);
+            this.lblDataHora.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblDataHora.Location = new System.Drawing.Point(45, 18);
+            this.lblDataHora.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblDataHora.Name = "lblDataHora";
-            this.lblDataHora.Size = new System.Drawing.Size(0, 17);
+            this.lblDataHora.Size = new System.Drawing.Size(0, 15);
             this.lblDataHora.TabIndex = 0;
             // 
             // btnVendas
             // 
             this.btnVendas.ActiveControl = null;
             this.btnVendas.BackColor = System.Drawing.Color.DeepSkyBlue;
-            this.btnVendas.Location = new System.Drawing.Point(39, 292);
-            this.btnVendas.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnVendas.Location = new System.Drawing.Point(29, 237);
+            this.btnVendas.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnVendas.Name = "btnVendas";
-            this.btnVendas.Size = new System.Drawing.Size(353, 218);
+            this.btnVendas.Size = new System.Drawing.Size(265, 177);
             this.btnVendas.TabIndex = 2;
             this.btnVendas.Text = "Vendas";
             this.btnVendas.TileImage = global::SilmDesktop.Properties.Resources.vendas;
@@ -89,10 +131,10 @@
             this.btnProdutos.ActiveControl = null;
             this.btnProdutos.BackColor = System.Drawing.Color.DeepSkyBlue;
             this.btnProdutos.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.btnProdutos.Location = new System.Drawing.Point(39, 43);
-            this.btnProdutos.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnProdutos.Location = new System.Drawing.Point(29, 35);
+            this.btnProdutos.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnProdutos.Name = "btnProdutos";
-            this.btnProdutos.Size = new System.Drawing.Size(353, 222);
+            this.btnProdutos.Size = new System.Drawing.Size(265, 180);
             this.btnProdutos.TabIndex = 1;
             this.btnProdutos.Text = "Produtos";
             this.btnProdutos.TileImage = global::SilmDesktop.Properties.Resources.produtos1;
@@ -109,10 +151,10 @@
             // 
             this.btnClientes.ActiveControl = null;
             this.btnClientes.BackColor = System.Drawing.Color.DeepSkyBlue;
-            this.btnClientes.Location = new System.Drawing.Point(39, 537);
-            this.btnClientes.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnClientes.Location = new System.Drawing.Point(29, 436);
+            this.btnClientes.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnClientes.Name = "btnClientes";
-            this.btnClientes.Size = new System.Drawing.Size(353, 222);
+            this.btnClientes.Size = new System.Drawing.Size(265, 180);
             this.btnClientes.TabIndex = 0;
             this.btnClientes.Text = "Clientes";
             this.btnClientes.TileImage = global::SilmDesktop.Properties.Resources.clientes;
@@ -124,53 +166,82 @@
             this.btnClientes.UseTileImage = true;
             this.btnClientes.Click += new System.EventHandler(this.btnClientes_Click);
             // 
-            // lblNomeAdm
+            // metroListView1
             // 
-            this.lblNomeAdm.AutoSize = true;
-            this.lblNomeAdm.Location = new System.Drawing.Point(341, 17);
-            this.lblNomeAdm.Name = "lblNomeAdm";
-            this.lblNomeAdm.Size = new System.Drawing.Size(211, 20);
-            this.lblNomeAdm.TabIndex = 0;
-            this.lblNomeAdm.Text = "Nome de usuário não informado";
-            this.lblNomeAdm.Click += new System.EventHandler(this.lblNomeAdm_Click);
+            this.metroListView1.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
+            this.id,
+            this.nomecliente,
+            this.total,
+            this.datavenda,
+            this.bandeira});
+            this.metroListView1.Font = new System.Drawing.Font("Segoe UI", 12F);
+            this.metroListView1.FullRowSelect = true;
+            this.metroListView1.Location = new System.Drawing.Point(325, 72);
+            this.metroListView1.Name = "metroListView1";
+            this.metroListView1.OwnerDraw = true;
+            this.metroListView1.Size = new System.Drawing.Size(612, 342);
+            this.metroListView1.TabIndex = 4;
+            this.metroListView1.TileSize = new System.Drawing.Size(288, 95);
+            this.metroListView1.UseCompatibleStateImageBehavior = false;
+            this.metroListView1.UseSelectable = true;
+            this.metroListView1.View = System.Windows.Forms.View.Tile;
+            this.metroListView1.SelectedIndexChanged += new System.EventHandler(this.metroListView1_SelectedIndexChanged);
             // 
-            // metroLabel1
+            // id
             // 
-            this.metroLabel1.AutoSize = true;
-            this.metroLabel1.Location = new System.Drawing.Point(3, 17);
-            this.metroLabel1.Name = "metroLabel1";
-            this.metroLabel1.Size = new System.Drawing.Size(40, 20);
-            this.metroLabel1.TabIndex = 1;
-            this.metroLabel1.Text = "Data:";
+            this.id.Text = "ID";
+            this.id.Width = 160;
             // 
-            // metroLabel2
+            // nomecliente
             // 
-            this.metroLabel2.AutoSize = true;
-            this.metroLabel2.Location = new System.Drawing.Point(258, 17);
-            this.metroLabel2.Name = "metroLabel2";
-            this.metroLabel2.Size = new System.Drawing.Size(59, 20);
-            this.metroLabel2.TabIndex = 2;
-            this.metroLabel2.Text = "Usuário:";
+            this.nomecliente.Text = "Nome do cliente";
+            this.nomecliente.Width = 200;
+            // 
+            // total
+            // 
+            this.total.Text = "Valor total";
+            this.total.Width = 130;
+            // 
+            // datavenda
+            // 
+            this.datavenda.Text = "Data / Hora";
+            // 
+            // bandeira
+            // 
+            this.bandeira.Text = "Forma Pagto.";
+            // 
+            // metroLabel3
+            // 
+            this.metroLabel3.AutoSize = true;
+            this.metroLabel3.FontSize = MetroFramework.MetroLabelSize.Tall;
+            this.metroLabel3.Location = new System.Drawing.Point(325, 35);
+            this.metroLabel3.Name = "metroLabel3";
+            this.metroLabel3.Size = new System.Drawing.Size(241, 25);
+            this.metroLabel3.TabIndex = 5;
+            this.metroLabel3.Text = "Ultimas vendas (Auto-reload): ";
+            this.metroLabel3.Click += new System.EventHandler(this.metroLabel3_Click);
             // 
             // FormPrincipal
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1119, 869);
+            this.ClientSize = new System.Drawing.Size(1218, 890);
+            this.Controls.Add(this.metroLabel3);
+            this.Controls.Add(this.metroListView1);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.btnVendas);
             this.Controls.Add(this.btnProdutos);
             this.Controls.Add(this.btnClientes);
-            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.MaximizeBox = false;
             this.Name = "FormPrincipal";
-            this.Padding = new System.Windows.Forms.Padding(20, 74, 20, 20);
+            this.Padding = new System.Windows.Forms.Padding(15, 60, 15, 16);
             this.Resizable = false;
-            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.FormPrincipal_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -184,5 +255,12 @@
         private MetroFramework.Controls.MetroLabel lblNomeAdm;
         private MetroFramework.Controls.MetroLabel metroLabel2;
         private MetroFramework.Controls.MetroLabel metroLabel1;
+        private MetroFramework.Controls.MetroListView metroListView1;
+        private System.Windows.Forms.ColumnHeader id;
+        private System.Windows.Forms.ColumnHeader nomecliente;
+        private System.Windows.Forms.ColumnHeader total;
+        private System.Windows.Forms.ColumnHeader datavenda;
+        private System.Windows.Forms.ColumnHeader bandeira;
+        private MetroFramework.Controls.MetroLabel metroLabel3;
     }
 }

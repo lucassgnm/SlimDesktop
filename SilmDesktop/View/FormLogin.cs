@@ -70,5 +70,10 @@ namespace SilmDesktop
                 MessageBox.Show("Houve um erro ao tentar se conectar com o servidor. " + err);
             }
         }
+
+        private void metroTile1_Click(object sender, EventArgs e)
+        {
+            verificaLogin();
+        }
     }
 }

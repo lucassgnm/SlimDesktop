@@ -77,6 +77,7 @@
     <Compile Include="Controller\ItemVenda.cs" />
     <Compile Include="Controller\Mensagem.cs" />
     <Compile Include="Controller\Produto.cs" />
+    <Compile Include="Controller\UltimasVendas.cs" />
     <Compile Include="Controller\Vendas.cs" />
     <Compile Include="Util\FormatCnpjCpfTelefone.cs" />
     <Compile Include="Util\PublicMethods.cs" />
