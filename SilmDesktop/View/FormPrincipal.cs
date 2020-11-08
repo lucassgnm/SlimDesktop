@@ -69,6 +69,8 @@ namespace SilmDesktop.View
                         vendas[i].bandeira
                     };
                     ListViewItem item = new ListViewItem(subitems);
+                    item.ForeColor = Color.Black;
+                    if (i == 0) item.Selected = true;
                     metroListView1.Items.Add(item);
                 }
             }
@@ -85,6 +87,8 @@ namespace SilmDesktop.View
                         vendas[i].bandeira
                     };
                     ListViewItem item = new ListViewItem(subitems);
+                    item.ForeColor = Color.Black;
+                    if (i == 0) item.Selected = true;
                     metroListView1.Items.Add(item);
                 }
             }
@@ -106,26 +110,6 @@ namespace SilmDesktop.View
         {
             FormVenda f = new FormVenda();
             f.ShowDialog();
-        }
-
-        private void groupBox1_Enter(object sender, EventArgs e)
-        {
-
-        }
-
-        private void lblNomeAdm_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void metroListView1_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void metroLabel3_Click(object sender, EventArgs e)
-        {
-
         }
     }
 }

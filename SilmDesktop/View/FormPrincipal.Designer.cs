@@ -52,16 +52,14 @@
             this.groupBox1.Controls.Add(this.metroLabel1);
             this.groupBox1.Controls.Add(this.lblNomeAdm);
             this.groupBox1.Controls.Add(this.lblDataHora);
-            this.groupBox1.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.groupBox1.Location = new System.Drawing.Point(15, 832);
-            this.groupBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox1.Location = new System.Drawing.Point(29, 620);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(2);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.groupBox1.Size = new System.Drawing.Size(1188, 42);
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(2);
+            this.groupBox1.Size = new System.Drawing.Size(1151, 42);
             this.groupBox1.TabIndex = 3;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Informações";
-            this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter);
             // 
             // metroLabel2
             // 
@@ -95,7 +93,6 @@
             this.lblNomeAdm.Size = new System.Drawing.Size(208, 19);
             this.lblNomeAdm.TabIndex = 0;
             this.lblNomeAdm.Text = "Nome de usuário não informado";
-            this.lblNomeAdm.Click += new System.EventHandler(this.lblNomeAdm_Click);
             // 
             // lblDataHora
             // 
@@ -112,7 +109,7 @@
             this.btnVendas.ActiveControl = null;
             this.btnVendas.BackColor = System.Drawing.Color.DeepSkyBlue;
             this.btnVendas.Location = new System.Drawing.Point(29, 237);
-            this.btnVendas.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnVendas.Margin = new System.Windows.Forms.Padding(2);
             this.btnVendas.Name = "btnVendas";
             this.btnVendas.Size = new System.Drawing.Size(265, 177);
             this.btnVendas.TabIndex = 2;
@@ -132,7 +129,7 @@
             this.btnProdutos.BackColor = System.Drawing.Color.DeepSkyBlue;
             this.btnProdutos.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.btnProdutos.Location = new System.Drawing.Point(29, 35);
-            this.btnProdutos.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnProdutos.Margin = new System.Windows.Forms.Padding(2);
             this.btnProdutos.Name = "btnProdutos";
             this.btnProdutos.Size = new System.Drawing.Size(265, 180);
             this.btnProdutos.TabIndex = 1;
@@ -152,7 +149,7 @@
             this.btnClientes.ActiveControl = null;
             this.btnClientes.BackColor = System.Drawing.Color.DeepSkyBlue;
             this.btnClientes.Location = new System.Drawing.Point(29, 436);
-            this.btnClientes.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnClientes.Margin = new System.Windows.Forms.Padding(2);
             this.btnClientes.Name = "btnClientes";
             this.btnClientes.Size = new System.Drawing.Size(265, 180);
             this.btnClientes.TabIndex = 0;
@@ -168,6 +165,7 @@
             // 
             // metroListView1
             // 
+            this.metroListView1.BackColor = System.Drawing.SystemColors.Window;
             this.metroListView1.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
             this.id,
             this.nomecliente,
@@ -175,6 +173,7 @@
             this.datavenda,
             this.bandeira});
             this.metroListView1.Font = new System.Drawing.Font("Segoe UI", 12F);
+            this.metroListView1.ForeColor = System.Drawing.SystemColors.Window;
             this.metroListView1.FullRowSelect = true;
             this.metroListView1.Location = new System.Drawing.Point(325, 72);
             this.metroListView1.Name = "metroListView1";
@@ -183,9 +182,10 @@
             this.metroListView1.TabIndex = 4;
             this.metroListView1.TileSize = new System.Drawing.Size(288, 95);
             this.metroListView1.UseCompatibleStateImageBehavior = false;
+            this.metroListView1.UseCustomBackColor = true;
+            this.metroListView1.UseCustomForeColor = true;
             this.metroListView1.UseSelectable = true;
             this.metroListView1.View = System.Windows.Forms.View.Tile;
-            this.metroListView1.SelectedIndexChanged += new System.EventHandler(this.metroListView1_SelectedIndexChanged);
             // 
             // id
             // 
@@ -216,23 +216,22 @@
             this.metroLabel3.FontSize = MetroFramework.MetroLabelSize.Tall;
             this.metroLabel3.Location = new System.Drawing.Point(325, 35);
             this.metroLabel3.Name = "metroLabel3";
-            this.metroLabel3.Size = new System.Drawing.Size(241, 25);
+            this.metroLabel3.Size = new System.Drawing.Size(232, 25);
             this.metroLabel3.TabIndex = 5;
-            this.metroLabel3.Text = "Ultimas vendas (Auto-reload): ";
-            this.metroLabel3.Click += new System.EventHandler(this.metroLabel3_Click);
+            this.metroLabel3.Text = "Ultimas vendas (Live reload): ";
             // 
             // FormPrincipal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1218, 890);
+            this.ClientSize = new System.Drawing.Size(1218, 673);
             this.Controls.Add(this.metroLabel3);
             this.Controls.Add(this.metroListView1);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.btnVendas);
             this.Controls.Add(this.btnProdutos);
             this.Controls.Add(this.btnClientes);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.MaximizeBox = false;
             this.Name = "FormPrincipal";
             this.Padding = new System.Windows.Forms.Padding(15, 60, 15, 16);

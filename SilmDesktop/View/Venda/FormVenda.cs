@@ -46,6 +46,8 @@ namespace SilmDesktop.View.Venda
                         status
                     };
                     ListViewItem item = new ListViewItem(subitems);
+                    if (vendas[i].status == 1)
+                        item.BackColor = Color.FromArgb(255,255,153);
                     ltvVenda.Items.Add(item);
                 }
             }
