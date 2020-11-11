@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using SilmDesktop.View;
 
 namespace SilmDesktop
 {
@@ -16,7 +17,7 @@ namespace SilmDesktop
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new FormLogin());
+            Application.Run(new FormPrincipal("teste"));
         }
     }
 }

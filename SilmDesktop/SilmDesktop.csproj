@@ -74,6 +74,7 @@
     <Compile Include="ApiService.cs" />
     <Compile Include="Controller\Administrador.cs" />
     <Compile Include="Controller\Clientes.cs" />
+    <Compile Include="Controller\InfoDash.cs" />
     <Compile Include="Controller\ItemVenda.cs" />
     <Compile Include="Controller\Mensagem.cs" />
     <Compile Include="Controller\Produto.cs" />
@@ -81,6 +82,13 @@
     <Compile Include="Controller\Vendas.cs" />
     <Compile Include="Util\FormatCnpjCpfTelefone.cs" />
     <Compile Include="Util\PublicMethods.cs" />
+    <Compile Include="Util\RegexUtilitiesEmail.cs" />
+    <Compile Include="View\CampanhaEmail\FormCampanhaEmail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\CampanhaEmail\FormCampanhaEmail.Designer.cs">
+      <DependentUpon>FormCampanhaEmail.cs</DependentUpon>
+    </Compile>
     <Compile Include="View\Cliente\FormCliente.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -92,6 +100,12 @@
     </Compile>
     <Compile Include="View\Cliente\FormClienteEdit.Designer.cs">
       <DependentUpon>FormClienteEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\FormLoad.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\FormLoad.Designer.cs">
+      <DependentUpon>FormLoad.cs</DependentUpon>
     </Compile>
     <Compile Include="View\FormLogin.cs">
       <SubType>Form</SubType>
@@ -132,11 +146,17 @@
       <DependentUpon>FormVenda.cs</DependentUpon>
     </Compile>
     <Compile Include="WaitFormExample\Properties.cs" />
+    <EmbeddedResource Include="View\CampanhaEmail\FormCampanhaEmail.resx">
+      <DependentUpon>FormCampanhaEmail.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="View\Cliente\FormCliente.resx">
       <DependentUpon>FormCliente.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="View\Cliente\FormClienteEdit.resx">
       <DependentUpon>FormClienteEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\FormLoad.resx">
+      <DependentUpon>FormLoad.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="View\FormLogin.resx">
       <DependentUpon>FormLogin.cs</DependentUpon>
@@ -210,6 +230,8 @@
   <ItemGroup>
     <None Include="Resources\Eclipse-1s-200px.gif" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <None Include="Resources\marketing-de-email %282%29.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

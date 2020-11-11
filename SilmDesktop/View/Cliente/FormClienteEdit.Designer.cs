@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormClienteEdit));
             this.metroLabel6 = new MetroFramework.Controls.MetroLabel();
             this.lblId = new MetroFramework.Controls.MetroLabel();
             this.btnEditCliente = new MetroFramework.Controls.MetroButton();
@@ -243,6 +244,7 @@
             this.Controls.Add(this.txtEmail);
             this.Controls.Add(this.metroLabel1);
             this.Controls.Add(this.txtNome);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.Name = "FormClienteEdit";
             this.Resizable = false;

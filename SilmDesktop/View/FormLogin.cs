@@ -43,26 +43,33 @@ namespace SilmDesktop
 
         private void verificaLogin()
         {
+
             try
             {
-                ApiService apiserv = new ApiService();
-                var json = apiserv.fazRequisicaoPOST("https://slimws.tk/desktop/administradorExiste", "email=" + txtEmail.Text + "&senha=" + txtSenha.Text);
-                JavaScriptSerializer js = new JavaScriptSerializer();
-                Mensagem mensagem = js.Deserialize<Mensagem>(json);
+                if (RegexUtilitiesEmail.RegexUtilitiesEmail.IsValidEmail(txtEmail.Text))
+                {
+                    ApiService apiserv = new ApiService();
+                    var json = apiserv.fazRequisicaoPOST("https://slimws.tk/desktop/administradorExiste", "email=" + txtEmail.Text + "&senha=" + txtSenha.Text);
+                    JavaScriptSerializer js = new JavaScriptSerializer();
+                    Mensagem mensagem = js.Deserialize<Mensagem>(json);
 
-                if (mensagem.code == 1)
+                    if (mensagem.code == 1)
+                    {
+                        this.Hide();
+                        FormPrincipal f = new FormPrincipal(mensagem.msg);
+                        f.Closed += (s, args) => this.Close();
+                        f.Show();
+                    }
+                    else
+                    {
+                        txtEmail.Text = "";
+                        txtSenha.Text = "";
+                        txtEmail.Focus();
+                        MessageBox.Show(mensagem.msg);
+                    }
+                } else
                 {
-                    this.Hide();
-                    FormPrincipal f = new FormPrincipal(mensagem.msg);
-                    f.Closed += (s, args) => this.Close();
-                    f.Show();
-                }
-                else
-                {
-                    txtEmail.Text = "";
-                    txtSenha.Text = "";
-                    txtEmail.Focus();
-                    MessageBox.Show(mensagem.msg);
+                    MessageBox.Show("Esse email não é válido");
                 }
             }
             catch (Exception err)

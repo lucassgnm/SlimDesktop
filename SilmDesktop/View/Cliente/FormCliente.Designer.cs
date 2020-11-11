@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormCliente));
             this.btnTodosProdutos = new MetroFramework.Controls.MetroButton();
             this.label1 = new System.Windows.Forms.Label();
             this.btnbuscaCliente = new MetroFramework.Controls.MetroButton();
@@ -48,10 +49,10 @@
             // btnTodosProdutos
             // 
             this.btnTodosProdutos.FontSize = MetroFramework.MetroButtonSize.Medium;
-            this.btnTodosProdutos.Location = new System.Drawing.Point(724, 587);
-            this.btnTodosProdutos.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnTodosProdutos.Location = new System.Drawing.Point(543, 477);
+            this.btnTodosProdutos.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnTodosProdutos.Name = "btnTodosProdutos";
-            this.btnTodosProdutos.Size = new System.Drawing.Size(229, 42);
+            this.btnTodosProdutos.Size = new System.Drawing.Size(172, 34);
             this.btnTodosProdutos.TabIndex = 11;
             this.btnTodosProdutos.Text = "Limpar pesquisa";
             this.btnTodosProdutos.UseSelectable = true;
@@ -60,19 +61,20 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 6.5F);
-            this.label1.Location = new System.Drawing.Point(9, 614);
+            this.label1.Location = new System.Drawing.Point(7, 499);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(462, 13);
+            this.label1.Size = new System.Drawing.Size(395, 12);
             this.label1.TabIndex = 9;
             this.label1.Text = "O carregamento dos clientes pode variar de acordo com a quantidade de itens a ser" +
     "em exibidos*";
             // 
             // btnbuscaCliente
             // 
-            this.btnbuscaCliente.Location = new System.Drawing.Point(376, 585);
-            this.btnbuscaCliente.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnbuscaCliente.Location = new System.Drawing.Point(282, 475);
+            this.btnbuscaCliente.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnbuscaCliente.Name = "btnbuscaCliente";
-            this.btnbuscaCliente.Size = new System.Drawing.Size(165, 26);
+            this.btnbuscaCliente.Size = new System.Drawing.Size(124, 21);
             this.btnbuscaCliente.TabIndex = 8;
             this.btnbuscaCliente.Text = "Pesquisar cliente";
             this.btnbuscaCliente.UseSelectable = true;
@@ -81,10 +83,10 @@
             // txtNomeCliente
             // 
             this.txtNomeCliente.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtNomeCliente.Location = new System.Drawing.Point(8, 585);
-            this.txtNomeCliente.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txtNomeCliente.Location = new System.Drawing.Point(6, 475);
+            this.txtNomeCliente.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtNomeCliente.Name = "txtNomeCliente";
-            this.txtNomeCliente.Size = new System.Drawing.Size(361, 26);
+            this.txtNomeCliente.Size = new System.Drawing.Size(272, 23);
             this.txtNomeCliente.TabIndex = 6;
             // 
             // ltvClientes
@@ -99,9 +101,9 @@
             this.ltvClientes.GridLines = true;
             this.ltvClientes.HideSelection = false;
             this.ltvClientes.Location = new System.Drawing.Point(-1, 1);
-            this.ltvClientes.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.ltvClientes.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.ltvClientes.Name = "ltvClientes";
-            this.ltvClientes.Size = new System.Drawing.Size(1144, 578);
+            this.ltvClientes.Size = new System.Drawing.Size(859, 470);
             this.ltvClientes.TabIndex = 7;
             this.ltvClientes.UseCompatibleStateImageBehavior = false;
             this.ltvClientes.View = System.Windows.Forms.View.Details;
@@ -140,34 +142,34 @@
             this.excluirToolStripMenuItem});
             this.metroContextMenu1.Name = "metroContextMenu1";
             this.metroContextMenu1.ShowImageMargin = false;
-            this.metroContextMenu1.Size = new System.Drawing.Size(97, 52);
+            this.metroContextMenu1.Size = new System.Drawing.Size(85, 48);
             // 
             // editarToolStripMenuItem
             // 
             this.editarToolStripMenuItem.Name = "editarToolStripMenuItem";
-            this.editarToolStripMenuItem.Size = new System.Drawing.Size(96, 24);
+            this.editarToolStripMenuItem.Size = new System.Drawing.Size(84, 22);
             this.editarToolStripMenuItem.Text = "Editar";
             this.editarToolStripMenuItem.Click += new System.EventHandler(this.editarToolStripMenuItem_Click);
             // 
             // excluirToolStripMenuItem
             // 
             this.excluirToolStripMenuItem.Name = "excluirToolStripMenuItem";
-            this.excluirToolStripMenuItem.Size = new System.Drawing.Size(96, 24);
+            this.excluirToolStripMenuItem.Size = new System.Drawing.Size(84, 22);
             this.excluirToolStripMenuItem.Text = "Excluir";
             this.excluirToolStripMenuItem.Click += new System.EventHandler(this.excluirToolStripMenuItem_Click);
             // 
             // FormCliente
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1145, 636);
+            this.ClientSize = new System.Drawing.Size(859, 517);
             this.Controls.Add(this.btnTodosProdutos);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.btnbuscaCliente);
             this.Controls.Add(this.txtNomeCliente);
             this.Controls.Add(this.ltvClientes);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.KeyPreview = true;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.MaximizeBox = false;
             this.Name = "FormCliente";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;

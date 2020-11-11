@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using MetroFramework.Controls;
+using SilmDesktop.View;
 
 namespace SilmDesktop.Util
 {
@@ -31,5 +32,19 @@ namespace SilmDesktop.Util
 
             }
         }
+
+        private FormLoad f;
+
+        public void Preload()
+        {
+            f = new FormLoad();
+            f.ShowDialog();
+        }
+
+        public void UnPreload()
+        {
+            f.Hide();
+        }
+
     }
 }
