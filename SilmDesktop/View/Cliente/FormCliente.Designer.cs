@@ -50,7 +50,7 @@
             // 
             this.btnTodosProdutos.FontSize = MetroFramework.MetroButtonSize.Medium;
             this.btnTodosProdutos.Location = new System.Drawing.Point(543, 477);
-            this.btnTodosProdutos.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnTodosProdutos.Margin = new System.Windows.Forms.Padding(2);
             this.btnTodosProdutos.Name = "btnTodosProdutos";
             this.btnTodosProdutos.Size = new System.Drawing.Size(172, 34);
             this.btnTodosProdutos.TabIndex = 11;
@@ -72,7 +72,7 @@
             // btnbuscaCliente
             // 
             this.btnbuscaCliente.Location = new System.Drawing.Point(282, 475);
-            this.btnbuscaCliente.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnbuscaCliente.Margin = new System.Windows.Forms.Padding(2);
             this.btnbuscaCliente.Name = "btnbuscaCliente";
             this.btnbuscaCliente.Size = new System.Drawing.Size(124, 21);
             this.btnbuscaCliente.TabIndex = 8;
@@ -84,7 +84,7 @@
             // 
             this.txtNomeCliente.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtNomeCliente.Location = new System.Drawing.Point(6, 475);
-            this.txtNomeCliente.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtNomeCliente.Margin = new System.Windows.Forms.Padding(2);
             this.txtNomeCliente.Name = "txtNomeCliente";
             this.txtNomeCliente.Size = new System.Drawing.Size(272, 23);
             this.txtNomeCliente.TabIndex = 6;
@@ -101,7 +101,7 @@
             this.ltvClientes.GridLines = true;
             this.ltvClientes.HideSelection = false;
             this.ltvClientes.Location = new System.Drawing.Point(-1, 1);
-            this.ltvClientes.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.ltvClientes.Margin = new System.Windows.Forms.Padding(2);
             this.ltvClientes.Name = "ltvClientes";
             this.ltvClientes.Size = new System.Drawing.Size(859, 470);
             this.ltvClientes.TabIndex = 7;

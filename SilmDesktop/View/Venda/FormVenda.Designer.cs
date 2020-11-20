@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormVenda));
             this.btnTodosProdutos = new MetroFramework.Controls.MetroButton();
             this.label1 = new System.Windows.Forms.Label();
             this.btnbuscaProduto = new MetroFramework.Controls.MetroButton();
@@ -44,7 +45,7 @@
             // 
             this.btnTodosProdutos.FontSize = MetroFramework.MetroButtonSize.Medium;
             this.btnTodosProdutos.Location = new System.Drawing.Point(529, 474);
-            this.btnTodosProdutos.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnTodosProdutos.Margin = new System.Windows.Forms.Padding(2);
             this.btnTodosProdutos.Name = "btnTodosProdutos";
             this.btnTodosProdutos.Size = new System.Drawing.Size(172, 34);
             this.btnTodosProdutos.TabIndex = 11;
@@ -67,7 +68,7 @@
             // btnbuscaProduto
             // 
             this.btnbuscaProduto.Location = new System.Drawing.Point(285, 474);
-            this.btnbuscaProduto.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnbuscaProduto.Margin = new System.Windows.Forms.Padding(2);
             this.btnbuscaProduto.Name = "btnbuscaProduto";
             this.btnbuscaProduto.Size = new System.Drawing.Size(124, 21);
             this.btnbuscaProduto.TabIndex = 8;
@@ -79,7 +80,7 @@
             // 
             this.txtIdVenda.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtIdVenda.Location = new System.Drawing.Point(9, 474);
-            this.txtIdVenda.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtIdVenda.Margin = new System.Windows.Forms.Padding(2);
             this.txtIdVenda.Name = "txtIdVenda";
             this.txtIdVenda.Size = new System.Drawing.Size(272, 23);
             this.txtIdVenda.TabIndex = 6;
@@ -96,7 +97,7 @@
             this.ltvVenda.GridLines = true;
             this.ltvVenda.HideSelection = false;
             this.ltvVenda.Location = new System.Drawing.Point(-2, 0);
-            this.ltvVenda.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.ltvVenda.Margin = new System.Windows.Forms.Padding(2);
             this.ltvVenda.Name = "ltvVenda";
             this.ltvVenda.Size = new System.Drawing.Size(794, 470);
             this.ltvVenda.TabIndex = 7;
@@ -138,8 +139,9 @@
             this.Controls.Add(this.btnbuscaProduto);
             this.Controls.Add(this.txtIdVenda);
             this.Controls.Add(this.ltvVenda);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.KeyPreview = true;
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "FormVenda";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Manutenção de Vendas";

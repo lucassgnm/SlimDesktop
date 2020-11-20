@@ -196,6 +196,7 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <None Include="SilmDesktop.Controller.InfoDash.datasource" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

@@ -46,5 +46,11 @@ namespace SilmDesktop.View.CampanhaEmail
                 MessageBox.Show("Houve um erro ao tentar se conectar com o servidor. " + err);
             }
         }
+
+        private void FormCampanhaEmail_Load(object sender, EventArgs e)
+        {
+            txtAssunto.Focus();
+            txtAssunto.Select();
+        }
     }
 }

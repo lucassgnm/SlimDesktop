@@ -107,6 +107,7 @@
             this.Name = "FormCampanhaEmail";
             this.Resizable = false;
             this.Text = "Enviar email em massa:";
+            this.Load += new System.EventHandler(this.FormCampanhaEmail_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

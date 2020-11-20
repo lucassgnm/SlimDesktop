@@ -13,6 +13,7 @@ using SilmDesktop.Controller;
 using SilmDesktop.View.Cliente;
 using SilmDesktop.View.Venda;
 using SilmDesktop.View.CampanhaEmail;
+using System.Diagnostics;
 
 namespace SilmDesktop.View
 {
@@ -37,6 +38,26 @@ namespace SilmDesktop.View
             timer5s.Interval = (5000); // 5 sec
             timer5s.Tick += new EventHandler(timer_Tick5s);
             timer5s.Start();
+
+            
+            try
+            {
+                ApiService apiserv = new ApiService();
+                InfoDash[] info;
+                var json = apiserv.fazRequisicaoPOST("https://slimws.tk/desktop/getInformacoesDash", "");
+                info = js.Deserialize<InfoDash[]>(json);
+
+                lblVendasHj.Text = info[0].vendashj.ToString();
+                lblVendasTotaisHj.Text = info[0].vendastotaishj.ToString();
+                lblVendasTotaisMes.Text = info[0].vendastotaismes.ToString();
+                lblTicketMedioSemanal.Text = "R$ " + info[0].ticketmediosemanal.ToString("N2");
+                lblTicketMedioMensal.Text = "R$ " + info[0].ticketmediomensal.ToString("N2");
+                lblTicketMedioAnual.Text = "R$ " + info[0].ticketmedioanual.ToString("N2");
+            }
+            catch (Exception err)
+            {
+                MessageBox.Show("Houve um erro ao tentar se conectar com o servidor. " + err);
+            }
         }
 
         private void timer_Tick(object sender, EventArgs e)
