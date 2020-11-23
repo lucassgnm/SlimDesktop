@@ -17,7 +17,7 @@ namespace SilmDesktop
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new FormPrincipal("teste"));
+            Application.Run(new FormLogin());
         }
     }
 }
